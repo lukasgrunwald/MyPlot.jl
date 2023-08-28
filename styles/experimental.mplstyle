@@ -1,0 +1,21 @@
+### FIGURE & save
+figure.dpi:     150
+# figure.figsize: 5.9, 3.65 # here given by the golden ratio
+savefig.dpi:    300
+savefig.bbox:   tight
+
+### LINES
+lines.linewidth: 1.3
+
+### TEXT
+font.size: 8
+font.family: sans-serif
+
+### DEFAULT-COLOR
+# Default colors of Matplotlib
+# axes.prop_cycle: cycler('color', ['088CEB', '37B406', '2ca02c', 'd62728', '9B4CE6', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
+# axes.prop_cycle: cycler('color', ['7fc97f', 'beaed4', 'fdc086', 'ffff99', '386cb0', 'f0027f', 'bf5b17', '666666'])
+axes.prop_cycle: cycler('color', ['2b2688', '632aad', 'c4385a', 'f06510', 'e6ad12', 'e6e172'])
+
+# Default colors of Seaborn
+# axes.prop_cycle: cycler('color', ['4c72b0', 'dd8452', '55a868', 'c44e52', '8172b3', '937860', 'da8bc3', '8c8c8c', 'ccb974', '64b5cd'])

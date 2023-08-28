@@ -1,0 +1,23 @@
+### FIGURE & save
+figure.dpi:     250
+savefig.dpi:    600
+savefig.bbox:   tight
+
+### LINES
+lines.linewidth: 1.2
+
+### TEXT
+text.latex.preamble: \usepackage{amsmath} \usepackage[charter, cal=cmcal]{mathdesign}
+text.usetex : True
+font.size: 8
+font.family: sans-serif
+
+### LEGEND
+legend.fontsize: small # Set to the same fontsize as the rest!
+legend.frameon:       False     # if True, draw the legend on a background patch
+
+### DEFAULT-COLOR
+# Default colors of Matplotlib
+axes.prop_cycle: cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
+# Default colors of Seaborn (look dirty to me...)
+# axes.prop_cycle: cycler('color', ['4c72b0', 'dd8452', '55a868', 'c44e52', '8172b3', '937860', 'da8bc3', '8c8c8c', 'ccb974', '64b5cd'])
