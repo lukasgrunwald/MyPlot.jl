@@ -1,0 +1,13 @@
+name: Register Package
+on: [push, pull_request]
+jobs:
+  register:
+    name: Register Package
+    runs-on: ubuntu-latest
+    steps:
+    - uses: lukasgrunwald/julia-register-local@master
+      with:
+        localregistry: git@github.com:lukasgrunwald/CondMatRegistry.git
+        ssh_keys: |
+           ${{ secrets.REGISTRY_DEPLOY }}
+    
