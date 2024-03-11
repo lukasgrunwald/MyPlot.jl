@@ -12,6 +12,7 @@ export sns
 using Reexport
 @reexport using PyPlot # Exports things like LatexStrings that are needed!
 @reexport using PyCall
+@reexport using Printf # @sprintf for formatted output statements
 
 const sns = PyNULL() # explicitly imported in the __init__() function
 
