@@ -7,6 +7,7 @@ export set_style
 export markero, markerx, markery, markers
 export CM, WIDTH, GOLDEN_RATIO
 export polygon_under_graph, gradient_line, truncate_colormap
+export make_iterable
 export sns
 
 using Reexport
@@ -15,6 +16,9 @@ using Reexport
 @reexport using Printf # @sprintf for formatted output statements
 
 const sns = PyNULL() # explicitly imported in the __init__() function
+
+# Make single instance of axis object iterable
+make_iterable(ax) = typeof(ax) <: PyObject ? [ax] : ax
 
 # ——————————————————————————— Change the mplstyle file to use —————————————————————————— #
 """
