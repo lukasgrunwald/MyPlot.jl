@@ -54,11 +54,6 @@ function Base.getindex(A::PyObject, i::Integer, r::UnitRange{<:Integer})
     r_start > r_end && error("Empty UnitRange!")
     return get(A, (i-1, slice(r_start-1, r_end)))
 end
-function Base.getindex(A::PyObject, r::UnitRange{<:Integer}, i::Integer)
-    r_start = r[1];  r_end = r[end]
-    r_start > r_end && error("Empty UnitRange!")
-    return get(A, (slice(r_start-1, r_end), i-1))
-end
 function Base.getindex(A::PyObject, r1::UnitRange{<:Integer}, r2::UnitRange{<:Integer})
     r1_start = r1[1];  r1_end = r1[end]
     r2_start = r2[1];  r2_end = r2[end]
@@ -130,7 +125,7 @@ const CM = 1/2.54
 const WIDTH = 15*CM
 const GOLDEN_RATIO = 1/2 * (1 + √5)
 
-# Init function is called whenever MyPlot is in cluded via using or import
+# Init function is called whenever MyPlot is included via using or import
 function __init__()
     copy!(sns, pyimport("seaborn")) # Import seaborn package
 

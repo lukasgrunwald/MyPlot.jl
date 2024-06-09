@@ -1,5 +1,5 @@
 ### FIGURE & save
-figure.dpi:     250
+figure.dpi:     175
 # figure.figsize: 5.9, 3.65 # here given by the golden ratio
 savefig.dpi:    600
 savefig.bbox:   tight

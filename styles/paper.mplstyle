@@ -1,5 +1,5 @@
 ### FIGURE & save
-figure.dpi:     250
+figure.dpi:     175
 savefig.dpi:    600
 savefig.bbox:   tight
 

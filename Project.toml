@@ -1,10 +1,9 @@
 name = "MyPlot"
 uuid = "8523ee09-f87b-436d-8687-f5a8240ec6b7"
 authors = ["Lukas Grunwald <lukas.grunwald@rwth-aachen.de>"]
-version = "0.2.0"
+version = "0.3.0"
 
 [deps]
-Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
